@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MuscleMate</title>
+    <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#0b0f14" />
+  </head>
+  <body class="bg-gym">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <style>
+      .bg-gym {
+        /* Pure gym image theme (no blue tint). Tries jpg/jpeg/png in public/assets/img/ */
+        background-image:
+          linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+          url('%PUBLIC_URL%/assets/img/gym-bg.jpg'),
+          url('%PUBLIC_URL%/assets/img/gym-bg.jpeg'),
+          url('%PUBLIC_URL%/assets/img/gym-bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    </style>
+  </body>
+  </html>
+
+
